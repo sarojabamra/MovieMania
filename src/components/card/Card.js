@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 import "./Card.css";
 import { Link } from "react-router-dom";
 
@@ -18,9 +17,6 @@ const Card = ({movie}) => {
     {
   isLoading ? (
     <div className="cards">
-      <SkeletonTheme color="#202020" highlightColor="#444">
-        <Skeleton className="skeleton" height={300} count={3} />
-      </SkeletonTheme>
     </div>
   ) : (
     <Link to={`/movie/${movie?.id}`} style={{ textDecoration: "none", color: "white" }}>
