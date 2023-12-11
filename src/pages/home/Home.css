@@ -1,0 +1,110 @@
+.posterImage{
+    height: 650px;
+    margin-top: 5.2rem;
+    opacity: 50%;
+}
+
+.carousel .control-dots .dot {
+    border-radius: 0% !important;
+    width: 20px !important;
+    height: 2px !important;
+  }
+
+.posterImage > img {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+.posterImage__overlay {
+    position: absolute;
+    padding: 5rem;
+    bottom: 0px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+    opacity: 1;
+    transition: opacity .3s;
+}   
+
+.posterImage__overlay:hover {
+    opacity: 1;
+}
+
+
+.posterImage__title {
+    font-weight: 900;
+    font-size: 3rem;
+    margin-bottom: 0.4rem;
+    text-align: left;
+}
+
+.posterImage__release {
+    opacity: 70%;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.posterImage__description {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    text-align: left;
+    width: 50%;
+    color: #808080;
+}
+
+@media screen and (max-width: 1024px) {
+    .posterImage {
+        margin-top: 5.5rem;
+        height: 440px;
+
+    }
+
+    .carousel .control-dots .dot {
+        visibility: visible !important;
+
+      }
+    }
+
+@media screen and (max-width: 750px) {
+    .posterImage {
+        margin-top: 5.5rem;
+        height: 215px;
+    }
+
+    .carousel .control-dots .dot {
+        visibility: hidden !important;
+
+      }
+
+    .posterImage__title {
+
+        font-size: 1.5rem;
+    
+    }
+    
+    .posterImage__release {
+
+        font-size: 0.8rem;
+    }
+    
+    .posterImage__description {
+        font-size: 0.6rem;
+
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .posterImage {
+        margin-top: 5.5rem;
+        height: 240px;
+    }
+}
